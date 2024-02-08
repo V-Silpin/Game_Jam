@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp5gmnyyp7v6c"]
+
+[ext_resource type="Texture2D" uid="uid://crdrcqwmx77fu" path="res://data/Assets/blade.png" id="1_4e2nt"]
+[ext_resource type="Script" path="res://weapon.gd" id="1_ef3ap"]
+[ext_resource type="Texture2D" uid="uid://o1kdvefbtevm" path="res://data/Assets/handle.png" id="2_qr8em"]
+
+[node name="weapon" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_ef3ap")
+
+[node name="Marker2D" type="Marker2D" parent="CharacterBody2D"]
+rotation = -2.54524
+
+[node name="blade" type="Sprite2D" parent="CharacterBody2D/Marker2D"]
+texture_filter = 1
+position = Vector2(-18, 2)
+rotation = 4.62336
+texture = ExtResource("1_4e2nt")
+offset = Vector2(2, -11)
+
+[node name="handle" type="Sprite2D" parent="CharacterBody2D/Marker2D"]
+texture_filter = 1
+position = Vector2(-15.8089, 1.49483)
+rotation = 1.479
+texture = ExtResource("2_qr8em")
+offset = Vector2(0, -7)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(28, 14)
+rotation = -1.10455
+polygon = PackedVector2Array(-3.57396, -10.5937, -7.8012, -6.33572, -9.19489, -0.67378, -9.17439, 4.98304, -7.04539, 7.09665, -3.49706, 10.6193, 3.57396, 10.5937, 3.56371, 7.76531, -3.5227, 3.54833, -3.53807, -0.694286, 1.38857, -7.07615, 1.37832, -9.90456)

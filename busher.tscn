@@ -1,0 +1,244 @@
+[gd_scene load_steps=11 format=3 uid="uid://ergcdyebs7q1"]
+
+[ext_resource type="Texture2D" uid="uid://bc83mvvega07i" path="res://data/Antag_2/Chasis.png" id="1_llag1"]
+[ext_resource type="Texture2D" uid="uid://v7evqve687u3" path="res://data/Antag_2/Wheel.png" id="2_ekm4n"]
+[ext_resource type="Texture2D" uid="uid://bg3g06ge5rjav" path="res://data/Antag_2/Jaw.png" id="3_6i1wn"]
+
+[sub_resource type="Animation" id="Animation_1ybot"]
+resource_name = "Attack"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D/Chasis/Jaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-23, -29), Vector2(-27.5678, -24.6256), Vector2(-23, -29)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody2D/Chasis/Jaw:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_8mxxx"]
+resource_name = "Move"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D/Chasis:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9, 25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody2D/Chasis:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.485271]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterBody2D/Wheel:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9, 28)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterBody2D/Wheel:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -1.5708, -3.14159]
+}
+
+[sub_resource type="Animation" id="Animation_ialle"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D/Wheel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9, 28)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody2D/Wheel:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterBody2D/Chasis/Jaw:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-23, -29)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterBody2D/Chasis/Jaw:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CharacterBody2D/Chasis:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9, 25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CharacterBody2D/Chasis:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_gk51c"]
+resource_name = "Stun"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D/Chasis:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(9, 25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterBody2D/Chasis:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.631943, 0.796258]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pbe88"]
+_data = {
+"Attack": SubResource("Animation_1ybot"),
+"Move": SubResource("Animation_8mxxx"),
+"RESET": SubResource("Animation_ialle"),
+"Stun": SubResource("Animation_gk51c")
+}
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_s3hvi"]
+states/End/position = Vector2(669, 100)
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_xkc2x"]
+
+[node name="Busher" type="Node2D"]
+z_index = 3
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Wheel" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(9, 28)
+scale = Vector2(1, 1.12)
+texture = ExtResource("2_ekm4n")
+
+[node name="Chasis" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(9, 25)
+texture = ExtResource("1_llag1")
+offset = Vector2(-10, -25)
+
+[node name="Jaw" type="Sprite2D" parent="CharacterBody2D/Chasis"]
+z_index = -1
+texture_filter = 1
+position = Vector2(-23, -29)
+texture = ExtResource("3_6i1wn")
+offset = Vector2(-14, 4)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_pbe88")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="CharacterBody2D/AnimationPlayer"]
+tree_root = SubResource("AnimationNodeStateMachine_s3hvi")
+anim_player = NodePath("..")
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_xkc2x")
+
+[node name="CollisionPolygon2D_2" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(2, 0)
+polygon = PackedVector2Array(-18, -8, -46, -8, -51, -2, -46, 2, -30, -4, -8, -8, 0, -15, -8, -15)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(1, 0)
+polygon = PackedVector2Array(-21, -2, -39, 1, -45, 7, -21, 7, -15, 0)
